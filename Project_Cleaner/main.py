@@ -31,7 +31,7 @@ def Organize():
 
     for n in File_Formats:
         if os.path.exists(n + " Files"):
-            print("Folder Already Exists")
+            print(n + " Folder already exists")
         else:
             os.mkdir(n + " Files")
 
@@ -41,7 +41,8 @@ def FolderPut():
 
     for j in All_Files:
         if any(j.endswith(k) for k  in File_Formats):
-            shutil.move(j,str(j.split(".")[1] + " Files"))
+            shutil.move(j,str(j.split(".")[-1] + " Files"))
+            print(j + " Moved to " + str(j.split(".")[-1] + " Files"))
 
 
 
