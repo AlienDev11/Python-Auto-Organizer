@@ -1,5 +1,7 @@
 =====Python Auto Organizer=====
 
+My second project also i was to lazy to organize it myself.
+
 USAGE:
 
 python3 main.py FOLDER_LOCATION
